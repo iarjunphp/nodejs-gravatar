@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.9
+3 info using node@v7.2.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\praveena\\Desktop\\nodejs-gravatar',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\praveena\AppData\Roaming\npm-cache\nodejs-gravatar\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\praveena\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle nodejs-gravatar@1.0.0~prepublish: nodejs-gravatar@1.0.0
+11 silly lifecycle nodejs-gravatar@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\praveena\\AppData\\Roaming\\npm-cache\\nodejs-gravatar\\1.0.0\\package.tgz',
+12 verbose tar pack   'C:\\Users\\praveena\\Desktop\\nodejs-gravatar' ]
+13 verbose tarball C:\Users\praveena\AppData\Roaming\npm-cache\nodejs-gravatar\1.0.0\package.tgz
+14 verbose folder C:\Users\praveena\Desktop\nodejs-gravatar
+15 verbose addLocalTarball adding from inside cache C:\Users\praveena\AppData\Roaming\npm-cache\nodejs-gravatar\1.0.0\package.tgz
+16 verbose correctMkdir C:\Users\praveena\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd nodejs-gravatar@1.0.0
+18 verbose afterAdd C:\Users\praveena\AppData\Roaming\npm-cache\nodejs-gravatar\1.0.0\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\praveena\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\praveena\AppData\Roaming\npm-cache\nodejs-gravatar\1.0.0\package\package.json written
+21 silly publish { name: 'nodejs-gravatar',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'it will return \u0016gravatar url ',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   keywords: [ 'gravatar', 'gravatar', 'image' ],
+21 silly publish   author: { name: 'arjunhp', email: 'arjunphp@gmail.com' },
+21 silly publish   license: 'ISC',
+21 silly publish   readme: '# nodejs-gravatar\r\n\r\n#Getting Started\r\nInstall the module:\r\n\r\n<pre> npm install nodejs-gravatar</pre>\r\n\r\nUse it in your script:\r\n\r\n<pre>\r\nconst gravatar = require(\'nodejs-gravatar\');\r\n// gravatar.url(email,options,https) // default is https\r\nconsole.log(gravatar.url(\'arjunphp@gmail.com\',{s:200}));\r\n</pre>\r\n\r\nBy default, images are presented at 80px by 80px if no size parameter is supplied. you can set parameter by passing s or size via options. \r\n\r\nYou may request images anywhere from 1px up to 2048px, however note that many users have lower resolution images, so requesting larger sizes may result in pixelation/low-quality images.\r\n\r\n# License\r\nCopyright (c) 2013 Modulus Licensed under the MIT license.',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'b124fbddb64091b81bafb86d7de60abf81d9100b',
+21 silly publish   _id: 'nodejs-gravatar@1.0.0',
+21 silly publish   _shasum: '94dc4e2a206631a4ffc8a53688bd24b735b11cdf',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name nodejs-gravatar
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'nodejs-gravatar',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'nodejs-gravatar',
+26 silly mapToRegistry   name: 'nodejs-gravatar',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/nodejs-gravatar
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading C:\Users\praveena\AppData\Roaming\npm-cache\nodejs-gravatar\1.0.0\package.tgz
+30 verbose request uri https://registry.npmjs.org/nodejs-gravatar
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 3:29:08 PM
+33 verbose request using bearer token for auth
+34 verbose request id afc29a3fd50d5e29
+35 http request PUT https://registry.npmjs.org/nodejs-gravatar
+36 http 403 https://registry.npmjs.org/nodejs-gravatar
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '109',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 12 Apr 2017 09:59:10 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-sin18028-SIN',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1491991150.827931,VS0,VE816',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating C:\Users\praveena\AppData\Roaming\npm-cache\registry.npmjs.org\nodejs-gravatar on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "nodejs-gravatar". Are you logged in as the correct user? : nodejs-gravatar
+40 verbose stack     at makeError (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:290:14)
+40 verbose stack     at Request._callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:210:14)
+40 verbose stack     at Request.self.callback (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid nodejs-gravatar
+43 verbose cwd C:\Users\praveena\Desktop\nodejs-gravatar
+44 error Windows_NT 6.3.9600
+45 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error node v7.2.0
+47 error npm  v3.10.9
+48 error code E403
+49 error you do not have permission to publish "nodejs-gravatar". Are you logged in as the correct user? : nodejs-gravatar
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
