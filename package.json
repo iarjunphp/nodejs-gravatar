@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-gravatar",
+  "version": "1.0.0",
+  "description": "it will return \u0016gravatar url ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gravatar",
+    "gravatar",
+    "image"
+  ],
+  "author": "arjunhp <arjunphp@gmail.com>",
+  "license": "ISC"
+}
